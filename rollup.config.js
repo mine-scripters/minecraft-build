@@ -4,7 +4,7 @@ const nodeResolve = require('@rollup/plugin-node-resolve');
 module.exports = [
   {
     input: 'src/index.ts',
-    external: ['@minecraft/core-build-tasks', "just-task"],
+    external: ['@minecraft/core-build-tasks', 'just-task'],
     output: [
       {
         file: 'dist/MinecraftBuild.js',
