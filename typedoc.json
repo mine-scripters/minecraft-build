@@ -1,0 +1,13 @@
+{
+  "entryPoints": ["src/index.ts"],
+  "navigation": {
+    "includeCategories": true
+  },
+  "categoryOrder": [],
+  "githubPages": true,
+  "excludeInternal": true,
+  "excludePrivate": true,
+  "excludeProtected": true,
+  "externalSymbolLinkMappings": {
+  }
+}

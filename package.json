@@ -1,0 +1,52 @@
+{
+  "name": "@mine-scripters/minecraft-build",
+  "version": "0.0.0",
+  "description": "Build utils to help building a minecraft project in non windows environments",
+  "main": "./dist/MinecraftBuild.js",
+  "types": "./dist/MinecraftBuild.d.ts",
+  "scripts": {
+    "build": "rollup -c && dts-bundle-generator -o dist/MinecraftBuild.d.ts src/index.ts",
+    "docs": "typedoc",
+    "prettier": "npm run prettier:base -- --write",
+    "prettier:check": "npm run prettier:base -- --check",
+    "prettier:base": "prettier src/** *.json ./*js README.md",
+    "lint": "eslint src",
+    "lint:fix": "eslint --fix src",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Josejulio Martínez",
+  "license": "Apache-2.0",
+  "peerDependencies": {
+    "@minecraft/core-build-tasks": "^3.0.1"
+  },
+  "devDependencies": {
+    "@minecraft/core-build-tasks": "^3.0.1",
+    "@rollup/plugin-node-resolve": "^16.0.1",
+    "@rollup/plugin-typescript": "^12.1.2",
+    "@types/webpack": "^5.28.5",
+    "@typescript-eslint/eslint-plugin": "^8.26.1",
+    "@typescript-eslint/parser": "^8.26.1",
+    "dts-bundle-generator": "^9.5.1",
+    "esbuild": "^0.25.3",
+    "eslint": "^9.22.0",
+    "eslint-config-prettier": "^10.1.1",
+    "eslint-plugin-jest": "^28.11.0",
+    "prettier": "^3.5.3",
+    "rollup": "^4.35.0",
+    "typedoc": "^0.28.0",
+    "typescript": "^5.8.2"
+  },
+  "files": [
+    "package.json",
+    "dist/**",
+    "README.md",
+    "LICENSE.txt"
+  ],
+  "keywords": [
+    "minecraft",
+    "minecraft-scripting"
+  ],
+  "publishConfig": {
+    "access": "public"
+  }
+}
