@@ -1,6 +1,6 @@
 {
   "name": "@mine-scripters/minecraft-build",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Build utils to help building a minecraft project in non windows environments",
   "main": "./dist/MinecraftBuild.js",
   "types": "./dist/MinecraftBuild.d.ts",

@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.0.1](https://github.com/mine-scripters/minecraft-build/compare/v1.0.0...v1.0.1) (2025-05-02)
+
+
+### Bug Fixes
+
+* Add 4.0.0 as peer dependency too for @minecraft/core-build-tasks ([098d2f1](https://github.com/mine-scripters/minecraft-build/commit/098d2f11383d1c2f482293d3211b5ea35e18e3c5))
+
 ## 1.0.0 (2025-05-01)
 
 
