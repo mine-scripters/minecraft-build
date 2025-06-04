@@ -7,7 +7,12 @@ module.exports = [
     external: ['@minecraft/core-build-tasks', 'just-task'],
     output: [
       {
-        file: 'dist/MinecraftBuild.js',
+        file: 'dist/lib-cjs/MinecraftBuild.js',
+        format: 'cjs',
+        sourcemap: true,
+      },
+      {
+        file: 'dist/lib/MinecraftBuild.js',
         format: 'es',
         sourcemap: true,
       },

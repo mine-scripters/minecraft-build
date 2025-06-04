@@ -2,10 +2,13 @@
   "name": "@mine-scripters/minecraft-build",
   "version": "1.0.1",
   "description": "Build utils to help building a minecraft project in non windows environments",
-  "main": "./dist/MinecraftBuild.js",
-  "types": "./dist/MinecraftBuild.d.ts",
+  "exports": {
+    "import": "./dist/lib/MinecraftBuild.js",
+    "require": "./dist/lib-cjs/MinecraftBuild.js"
+  },
+  "types": "./dist/lib/MinecraftBuild.d.ts",
   "scripts": {
-    "build": "rollup -c && dts-bundle-generator -o dist/MinecraftBuild.d.ts src/index.ts",
+    "build": "rollup -c && dts-bundle-generator -o dist/lib/MinecraftBuild.d.ts src/index.ts",
     "docs": "typedoc",
     "prettier": "npm run prettier:base -- --write",
     "prettier:check": "npm run prettier:base -- --check",
@@ -17,10 +20,10 @@
   "author": "Josejulio Martínez",
   "license": "Apache-2.0",
   "peerDependencies": {
-    "@minecraft/core-build-tasks": "^3.0.1 || ^4.0.0"
+    "@minecraft/core-build-tasks": "^3.0.1 || ^4.0.0 || ^5.0.0"
   },
   "devDependencies": {
-    "@minecraft/core-build-tasks": "^3.0.1",
+    "@minecraft/core-build-tasks": "^5.0.0",
     "@rollup/plugin-node-resolve": "^16.0.1",
     "@rollup/plugin-typescript": "^12.1.2",
     "@types/webpack": "^5.28.5",
