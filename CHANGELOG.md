@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.0.2](https://github.com/mine-scripters/minecraft-build/compare/v1.0.1...v1.0.2) (2025-06-04)
+
+
+### Bug Fixes
+
+* provide cjs and es builds ([014d1bf](https://github.com/mine-scripters/minecraft-build/commit/014d1bfebdb1a37f88f8fa042ba2211f960a1ef8))
+
 ## [1.0.1](https://github.com/mine-scripters/minecraft-build/compare/v1.0.0...v1.0.1) (2025-05-02)
 
 
